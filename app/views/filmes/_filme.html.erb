@@ -1,0 +1,22 @@
+<div id="<%= dom_id filme %>">
+  <p>
+    <strong>Nome:</strong>
+    <%= filme.nome %>
+  </p>
+
+  <p>
+    <strong>Ano:</strong>
+    <%= filme.ano %>
+  </p>
+
+  <p>
+    <strong>Desc:</strong>
+    <%= filme.desc %>
+  </p>
+
+  <p>
+    <strong>Imagem:</strong>
+    <%= image_tag(filme.cartaz, width: '612px') if filme.cartaz.attached? %>
+  </p>
+
+</div>
