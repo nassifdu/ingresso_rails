@@ -2,10 +2,10 @@
 
 <h1>Filmes</h1>
 
-<div id="filmes">
+<div id="filmes" class="filmes-index-classe">
   <% @filmes.each do |filme| %>
     <%= render filme %>
-    <p>
+    <p class="show-filme-classe">
       <%= link_to "Show this filme", filme %>
     </p>
   <% end %>

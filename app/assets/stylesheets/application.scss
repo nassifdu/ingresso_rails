@@ -10,6 +10,35 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+ @import "bootstrap";
+
+*{
+    font-family: 'Dosis', sans-serif;
+ }
+
+.conteudo{
+    padding: 10px;
+}
+
+.filme-classe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.filmes-index-classe{
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr 10px;
+}
+
+.show-filme-classe{
+    overflow: visible;
+    transform: rotate(90deg);
+}
